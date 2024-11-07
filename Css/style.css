@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     box-sizing: border-box;
@@ -22,6 +25,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    left: 5%;
+    right: 5%;
 }
 .logo{}
 .logo a{color: white;text-decoration: none;font-size: 25px;display: inline-block;}
@@ -42,12 +48,15 @@ nav ul li a{
 /* ====banner section==== */
 .banner{
     text-align: center;
-    padding: 50px 0 100px 0;
+    padding: 50px 0 205px 0;
 }
 .banner h4{
-    font-size: 25px;
+    font-size: 30px;
     font-style: italic;
-    margin: 70px 0 5px 0;
+    margin: 141px 0 5px 0;
+}
+h1{
+    font-size: 70px;
 }
 .span{
     display: inline-block;
@@ -56,17 +65,19 @@ nav ul li a{
     background-color: red;
     border-radius: 5px;
 }
-.banner h1{
-    font-size: 70px;
-}
 .banner button{
     background: red; 
     border: 1px solid red;
     padding: 15px 10px;
-    border-radius: 5px;
+    border-radius: 35px;
     color: white;
     font-size: 20px;
     letter-spacing: 1px;
+    transition: All 0.3s linear;
+}
+.banner button:hover{
+    background: rgba(255, 0, 0, 0); 
+    letter-spacing: 3px;
 }
 /* ====upcoming event==== */
 .event-main{
@@ -106,4 +117,77 @@ nav ul li a{
     letter-spacing: 3px;
     text-decoration: none;
 }
-
+/*====EXPLORE THE WORLD SECTION START==== */
+.explore{
+    background-image: url(../Images/father.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 255, 0.37);
+    background-blend-mode: multiply;
+    padding: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.explore-item{
+    width: 50%;
+}
+.explore-item h1{
+    margin: 40px 0px 0px 0px;
+}
+.explore-item p{
+   margin: 30px opx 30px 0px;
+}
+.explore-item a{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+/* ====Tour section */
+.Tour-main{
+    padding: 5%;
+}
+.tour{
+    display: flex;
+    justify-content: space-between;
+}
+.tour-iteam{
+    width: 33%;
+    /* border: 1px solid; */
+    padding: 15px;
+}
+.tour-iteam h3{
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+}
+.tour-iteam p{
+    margin: 30px 0px 30px 0px;
+}
+.tour-iteam a{
+    text-decoration: none;
+    color: red;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.tour-iteam img{}
+.image-one{
+    height: 280px;
+    object-fit: cover;
+    margin: 0px 0px 25px 0px;
+}
+.image-two{
+    height: 370px;
+    object-fit: cover;
+    margin: 0px 0px 25px 0px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
