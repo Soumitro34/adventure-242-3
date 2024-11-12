@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0;
     box-sizing: border-box;
     font-size: 17px;
     font-family: "Roboto", sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-header{
+header {
     background-image: url(../Images/dawn.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -24,7 +25,8 @@ header{
     background-color: rgba(0, 0, 0, 0.658);
     background-blend-mode: multiply;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,57 +37,66 @@ header{
     transition: background-color 0.3s ease;
     z-index: 1000;
 }
+
 .navbar.scrolled {
     background-color: rgb(0, 0, 0);
     left: 0%;
     right: 0%;
     padding: 0% 5%;
 }
-.logo{}
-.logo a{
+.logo a {
     color: white;
     text-decoration: none;
     font-size: 25px;
-    display: inline-block;}
-.logo a h5{
+    display: inline-block;
+}
+.logo a h5 {
     font-weight: 600;
     margin: 13px 0 13px 0;
 }
-.logo a h5 span{
+
+.logo a h5 span {
     font-weight: 100;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
 }
-nav ul li a{
+
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     padding: 0 0 0 15px;
 }
+
 /* ====banner section==== */
-.banner{
+.banner {
     text-align: center;
     padding: 50px 0 205px 0;
 }
-.banner h4{
+
+.banner h4 {
     font-size: 30px;
     font-style: italic;
     margin: 141px 0 5px 0;
 }
-h1{
+
+h1 {
     font-size: 70px;
 }
-.span{
+
+.span {
     display: inline-block;
     height: 5px;
     width: 172px;
     background-color: red;
     border-radius: 5px;
 }
-.banner button{
-    background: red; 
+
+.banner button {
+    background: red;
     border: 1px solid red;
     padding: 15px 10px;
     border-radius: 35px;
@@ -94,50 +105,46 @@ h1{
     letter-spacing: 1px;
     transition: All 0.3s linear;
 }
-.banner button:hover{
-    background: rgba(255, 0, 0, 0); 
+
+.banner button:hover {
+    background: rgba(255, 0, 0, 0);
     letter-spacing: 3px;
 }
+
 /* ====upcoming event==== */
-.event-main{
+.event-main {
     padding: 50px 14%;
     text-align: center;
 }
-.event-main h3{
+
+.event-main h3 {
     font-size: 40px;
     margin: 20px 0 0 0;
 }
-/* .event-main span{
-    display: inline-block;
-    height: 5px;
-    width: 172px;
-    background-color: red;
-    border-radius: 5px;
-} */
-.event{
+.event {
     display: flex;
     margin: 30px 0 0 0;
 }
-.event-iteam{
+
+.event-iteam {
     width: 50%;
     margin: 20px;
     text-align: center;
 }
-.event-iteam img{
+
+.event-iteam img {
     height: 350px;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
-.event-iteam img h5{}
-.event-iteam p{}
-.event-iteam a{
+.event-iteam a {
     color: red;
     letter-spacing: 3px;
     text-decoration: none;
 }
 /*====EXPLORE THE WORLD SECTION START==== */
-.explore{
+.explore {
     background-image: url(../Images/father.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -150,16 +157,20 @@ h1{
     display: flex;
     justify-content: space-between;
 }
-.explore-item{
+
+.explore-item {
     width: 50%;
 }
-.explore-item h1{
+
+.explore-item h1 {
     margin: 40px 0px 0px 0px;
 }
-.explore-item p{
-   margin: 30px opx 30px 0px;
+
+.explore-item p {
+    margin: 30px opx 30px 0px;
 }
-.explore-item a{
+
+.explore-item a {
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 600;
@@ -167,44 +178,50 @@ h1{
     text-decoration: none;
 }
 /* ====Tour section */
-.Tour-main{
+.Tour-main {
     padding: 5%;
 }
-.tour{
+
+.tour {
     display: flex;
     justify-content: space-between;
 }
-.tour-iteam{
+
+.tour-iteam {
     width: 33%;
     /* border: 1px solid; */
     padding: 15px;
 }
-.tour-iteam h3{
+
+.tour-iteam h3 {
     font-size: 30px;
     margin: 0px 0px 0px 0px;
 }
-.tour-iteam p{
+
+.tour-iteam p {
     margin: 30px 0px 30px 0px;
 }
-.tour-iteam a{
+
+.tour-iteam a {
     text-decoration: none;
     color: red;
     letter-spacing: 1px;
     font-size: 20px;
     text-transform: capitalize;
 }
-.tour-iteam img{}
-.image-one{
+.image-one {
     height: 280px;
     object-fit: cover;
     margin: 0px 0px 25px 0px;
 }
-.image-two{
+
+.image-two {
     height: 370px;
     object-fit: cover;
     margin: 0px 0px 25px 0px;
 }
-footer{
+
+footer {
     background-color: black;
     color: white;
     padding: 100px;
@@ -225,9 +242,338 @@ footer{
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
-  
-  #myBtn:hover {
+}
+#myBtn:hover {
     background-color: #555;
-    /* ====media queries==== */
-    /* mobile device */
+}
+/* ====additional work */
+/* mobile device */
+@media only screen and (max-width:668px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    .span {
+        display: inline-block;
+        height: 3px;
+        width: 140px;
+    }
+    
+.navbar {
+    display: block;
+}
+.logo a {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+}
+.logo a h5 {
+    margin: 15px 0 20px 0;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 5px 0 5px;
+}
+
+/* ====banner section==== */
+.banner {
+    padding: 1px 0 60px 0;
+}
+
+.banner h4 {
+    font-size: 17px;
+    margin: 161px 0 5px 0;
+}
+.banner button {
+    padding: 8px 24px;
+    font-size: 18px;
+}
+
+/* ====upcoming event==== */
+.event-main {
+    padding: 20px 2%;
+}
+
+.event-main h3 {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+.event {
+    display: block;
+    margin: 30px 0 0 0;
+}
+
+.event-iteam {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.event-iteam img {
+    height: 220px;
+}
+
+.event-iteam img h5 {
+    font-size: 18px;
+}
+/*====EXPLORE THE WORLD SECTION START==== */
+    .explore {
+        padding: 10px;
+        color: white;
+        display: block;
+    }
+
+    .explore-item {
+        width: 100%;
+    }
+
+    .explore-item h1 {
+        margin: 20px 0px 0px 0px;
+    }
+
+    .explore-item p {
+        margin: 20px 0px 20px 0px;
+    }
+
+    .explore-item a {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    /* ====Tour section==== */
+.Tour-main {
+    padding: 5%;
+}
+
+.tour {
+    display: block;
+}
+
+.tour-iteam {
+    width: 100%;
+    padding: 0px 0 12px 0;
+}
+.mobile-special{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 12px;
+}
+.tour-iteam h3 {
+    font-size: 20px;
+    margin: 20px 0px 0px 0px;
+}
+
+.tour-iteam p {
+    margin: 20px 0px 20px 0px;
+}
+
+.tour-iteam a {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}
+.tour-iteam img{
+    margin: 0;
+}
+.image-one {
+    height: 150px;
+    margin: 0 auto;
+}
+  
+.image-two {
+    height: 150px;
+    margin: 0 auto;
+}
+    footer {
+        padding: 10px;
+    }
+}
+/* landscape mobile, tab device */
+@media only screen and (min-width:669px) and (max-width:768px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    .span {
+        display: inline-block;
+        height: 4px;
+        width: 15 0px;
+    }
+.navbar {
+    display: block;
+}
+.logo a {
+    font-size: 19px;
+    display: block;
+    text-align: center;
+}
+.logo a h5 {
+    margin: 20px 0 20px 0;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0 5px 0 5px;
+}
+/* ====banner section==== */
+.banner {
+    padding: 1px 0 60px 0;
+}
+.banner h4 {
+    font-size: 18px;
+    margin: 161px 0 5px 0;
+}
+.banner button {
+    padding: 10px 24px;
+    font-size: 18px;
+}
+/* ====upcoming event==== */
+.event-main {
+    padding: 40px 5%;
+}
+
+.event-main h3 {
+    font-size: 25px;
+    margin: 15px 0 0 0;
+}
+.event {
+    display: block;
+    margin: 20px 0 0 0;
+}
+
+.event-iteam {
+    width: 100%;
+    margin: 25px auto;
+}
+
+.event-iteam img {
+    height: 300px;
+}
+
+.event-iteam img h5 {
+    font-size: 20px;
+}
+/*====EXPLORE THE WORLD SECTION START==== */
+.explore {
+    padding: 30px;
+    color: white;
+    display: block;
+}
+
+.explore-item {
+    width: 100%;
+}
+
+.explore-item h1 {
+    margin: 30px 0px 30px 0px;
+}
+
+.explore-item p {
+    margin: 20px 0px 20px 0px;
+}
+
+.explore-item a {
+    font-size: 18px;
+    font-weight: 500;
+}
+ /* ====Tour section==== */
+ .Tour-main {
+    padding: 5%;
+}
+
+.tour {
+    display: block;
+}
+
+.tour-iteam {
+    width: 100%;
+    padding: 20px;
+}
+.mobile-special{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 12px;
+}
+.tour-iteam h3 {
+    font-size: 25px;
+    margin: 25px 0px 0px 0px;
+}
+}
+.image-one {
+    height: 250px;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+.image-two {
+    height: 250px;
+    width: 100%;
+    margin: 0 auto;
+}
+footer {
+    padding: 50px 10px;
+}
+}
+/* tab landscape, crt monitor,small laptop */
+@media only screen and (min-width:769px) and (max-width:992px) {
+    /* ====banner section==== */
+    h1 {
+        font-size: 58px;
+    }
+    
+    .span {
+        display: inline-block;
+        height: 4px;
+        width: 15 0px;
+    }
+    .banner h4 {
+    font-size: 20px;
+    margin: 161px 0 5px 0;
+}
+.banner button {
+    padding: 12px 26px;
+    font-size: 20px;
+}
+
+/* ====upcoming event==== */
+.event-main {
+    padding: 40px 5%;
+}
+
+.event-main h3 {
+    font-size: 30px;
+}
+.event-iteam img {
+    height: 320px;
+}
+/*====EXPLORE THE WORLD SECTION START==== */
+.explore {
+    padding: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-item {
+    width: 50%;
+}
+
+.explore-item h1 {
+    margin: 20px 0px 0px 0px;
+}
+}
+/* small monitor/small laptop */
+@media only screen and (min-width:993px) and (max-width:1024px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+/* largelaptop and normal monitor */
+@media only screen and (min-width:1025px) and (max-width:1440px) {
+    
+}
